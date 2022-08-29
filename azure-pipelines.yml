@@ -22,8 +22,7 @@ schedules:
     #exclude: [ string ] # which branches to exclude from the schedule
   always: true # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.schedules:
 
-trigger: 
-    batch: true
+trigger: none
 pr: none
 
 pool:
@@ -33,18 +32,6 @@ stages:
 - stage: Build
         
   jobs:
-  - job: Build_Release
-    displayName: Release Build
-  
-    steps:
-    - template: steps/abstract-build-steps.yml@template-scripts
-      parameters:
-         buildConfiguration: 'Release'
-
-    - task: PublishPipelineArtifact@1
-      inputs:
-         targetPath: $(Build.StagingDirectory)\WebApp.zip
-         artifactName: WebApp_Release
 
   - job: Build_Debug
     displayName: Debug Build
