@@ -9,8 +9,8 @@ resources:
   repositories:
     - repository: template-scripts
       type: github
-      name: dmedeiros-veracode/template-scripts
-      endpoint: dmedeiros-veracode
+      name: bhargavanb/VeraDemoTemplateScripts
+      endpoint: ODSM_VeraDemo
 
 
 # Scheduled Daily Builds of master branch
