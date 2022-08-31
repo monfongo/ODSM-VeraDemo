@@ -68,7 +68,7 @@ stages:
 
 - stage: Security_Testing
   jobs:       
-  - template: jobs/veracode-sast-platform-job.yml@template-scripts
+  - template: jobs/veracode-sast-pipeline-job.yml@template-scripts
     parameters: 
       downloadArtifact: "WebApp_Debug"
       
