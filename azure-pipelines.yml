@@ -9,8 +9,8 @@ resources:
   repositories:
     - repository: template-scripts
       type: github
-      name: bhargavanb/VeraDemoTemplateScripts
-      endpoint: ODSM_VeraDemo
+      name: monfongo/VeraDemoTemplateScripts
+      endpoint: ODSM-VeraDemo
 
 
 # Scheduled Daily Builds of master branch
